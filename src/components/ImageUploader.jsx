@@ -53,7 +53,7 @@ const ImageUploader = () => {
 
     return (
         <div style={styles.container}>
-            <h1>Demo Capturador Cognitivo Azure</h1>
+            <h1>WhaleCapture Demo</h1>
             <input type="file" accept="image/jpeg, image/png" onChange={handleImageUpload} />
             {image && <img src={URL.createObjectURL(image)} alt="Uploaded" style={styles.image} />}
             <button onClick={analyzeImage} style={styles.button}>Analizar imagen</button>
