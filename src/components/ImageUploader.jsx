@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import DownloadButton from './DownloadButton';
 
 const ImageUploader = () => {
     const [image, setImage] = useState(null);
@@ -52,11 +53,16 @@ const ImageUploader = () => {
 
     return (
         <div style={styles.container}>
-            <h1>Azure Cognitive Services API Demo</h1>
+            <h1>Demo Capturador Cognitivo Azure</h1>
             <input type="file" accept="image/jpeg, image/png" onChange={handleImageUpload} />
             {image && <img src={URL.createObjectURL(image)} alt="Uploaded" style={styles.image} />}
             <button onClick={analyzeImage} style={styles.button}>Analizar imagen</button>
-            {text && <pre style={styles.text}>{text}</pre>}
+            {text && (
+                <>
+                    <pre style={styles.text}>{text}</pre>
+                    <DownloadButton content={text} />
+                </>
+            )}
         </div>
     );
 };
