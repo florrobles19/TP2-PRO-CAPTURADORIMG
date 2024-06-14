@@ -30,7 +30,7 @@ const Header = () => {
       <img src={logo} alt="Logo" className="logo" />
       <nav className="nav">
         <a href="#home" className="navLink alignCenter">Home</a>
-        <a href="#about" className="navLink alignCenter">About</a>
+        
         <div className="loginContainer">
           <button onClick={toggleLoginMenu} className="loginButton">
             Login

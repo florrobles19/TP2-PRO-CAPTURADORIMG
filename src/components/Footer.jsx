@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
       <div className="footerContentRight">
         <button onClick={toggleSocialMenu} className="socialButton">
-          Redes Sociales
+          Contacto
         </button>
         {showSocialMenu && (
           <div className="socialMenu">
