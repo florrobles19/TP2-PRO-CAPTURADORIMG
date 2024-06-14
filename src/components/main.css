@@ -21,10 +21,9 @@ h1 {
   padding: 10px;
   border-bottom: 2px solid var(--light-purple);
 }
-
 /* Estilos para botones */
 button, input[type="button"], input[type="submit"], .navbar {
-  background-color: var(--light-purple);
+  background-color: var(--violet);
   font-family: 'Larken', sans-serif;
   color: white;
   border: none;
@@ -37,7 +36,7 @@ button, input[type="button"], input[type="submit"], .navbar {
 }
 
 button:hover, input[type="button"]:hover, input[type="submit"]:hover, .navbar:hover {
-  background-color: var(--purple);
+  background-color: var(--light-purple);
 }
 
 button:active, input[type="button"]:active, input[type="submit"]:active, .navbar:active {
@@ -63,7 +62,7 @@ body {
   background-image: url('./assets/TriunviBackground.jpg'); /* Ajusta la ruta según corresponda */
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   font-family: 'Larken', serif;
 }

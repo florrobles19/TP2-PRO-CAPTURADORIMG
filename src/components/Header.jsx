@@ -1,39 +1,63 @@
-// src/components/Header.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/Triunvi.png'; // Asegúrate de que la ruta sea correcta
+import './Header.css'; // Importa los estilos CSS
 
-const Header = () => (
-  <header style={styles.header}>
-    <img src={logo} alt="Logo" style={styles.logo} />
-    <nav style={styles.nav}>
-      <a href="#home" style={styles.navLink}>Home</a>
-      <a href="#about" style={styles.navLink}>About</a>
-      <a href="#contact" style={styles.navLink}>login</a>
-    </nav>
-  </header>
-);
+const Header = () => {
+  const [showLoginMenu, setShowLoginMenu] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-const styles = {
-  header: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '10px 20px',
-    backgroundColor: '#333',
+  const toggleLoginMenu = () => {
+    setShowLoginMenu(!showLoginMenu);
+  };
 
-    color: 'white',
-  },
-  logo: {
-    height: '80px',
-  },
-  nav: {
-    display: 'flex',
-    gap: '15px',
-  },
-  navLink: {
-    color: 'white',
-    textDecoration: 'none',
-  }
+  const handleLogin = () => {
+    // Aquí puedes manejar la lógica para autenticar al usuario
+    console.log(`Correo: ${email}, Contraseña: ${password}`);
+    // Por simplicidad, solo mostraremos los valores en la consola
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  return (
+    <header className="header">
+      <img src={logo} alt="Logo" className="logo" />
+      <nav className="nav">
+        <a href="#home" className="navLink alignCenter">Home</a>
+        <a href="#about" className="navLink alignCenter">About</a>
+        <div className="loginContainer">
+          <button onClick={toggleLoginMenu} className="loginButton">
+            Login
+          </button>
+          {showLoginMenu && (
+            <div className="loginMenu">
+              <input
+                type="text"
+                placeholder="Correo electrónico"
+                value={email}
+                onChange={handleEmailChange}
+                className="inputField"
+              />
+              <input
+                type="password"
+                placeholder="Contraseña"
+                value={password}
+                onChange={handlePasswordChange}
+                className="inputField"
+              />
+              <button onClick={handleLogin} className="loginSubmitButton">Entrar</button>
+            </div>
+          )}
+        </div>
+      </nav>
+    </header>
+  );
 };
 
 export default Header;

@@ -4,7 +4,9 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-}
+    margin-bottom: 100px; /* Ajusta según la altura del footer */
+    min-height: calc(100vh - 150px); /* Ajusta para dejar espacio al footer */
+  }
 
 .image {
     margin-top: 20px;
