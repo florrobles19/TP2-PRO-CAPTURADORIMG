@@ -1,3 +1,4 @@
+/** @jsxImportSource react */
 import React, { useState } from 'react';
 import logo from '../assets/Triunvi.png'; // Asegúrate de que la ruta sea correcta
 import './Header.css'; // Importa los estilos CSS
@@ -29,8 +30,9 @@ const Header = () => {
     <header className="header">
       <img src={logo} alt="Logo" className="logo" />
       <nav className="nav">
-        <a href="#home" className="navLink alignCenter">Home</a>
-        <a href="Register" className="navLink alignCenter">Registrarse</a>
+        <a href="../HomePage.jsx" className="navLink alignCenter">Home</a>
+        
+        <a href="../Capturador.html" className="navLink alignCenter">Capturador</a>
         
        
       </nav>

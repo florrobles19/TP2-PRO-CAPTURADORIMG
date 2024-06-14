@@ -1,3 +1,4 @@
+/** @jsxImportSource react */
 import React, { useState } from 'react';
 import './Footer.css'; // Importa los estilos CSS
 

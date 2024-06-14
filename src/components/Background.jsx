@@ -1,4 +1,4 @@
-// src/components/Background.jsx
+/** @jsxImportSource react */
 import React from 'react';
 import './Background.css'; // Importa el archivo CSS
 

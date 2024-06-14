@@ -1,3 +1,4 @@
+/** @jsxImportSource react */
 import React, { useState } from 'react';
 import axios from 'axios';
 import DownloadButton from './DownloadButton';
@@ -53,6 +54,7 @@ const ImageUploader = () => {
     };
 
     return (
+        
         <div className="container">
             <input type="file" accept="image/jpeg, image/png" onChange={handleImageUpload} />
             {image && <img src={URL.createObjectURL(image)} alt="Uploaded" className="image" />}
