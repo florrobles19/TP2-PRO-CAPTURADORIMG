@@ -30,31 +30,9 @@ const Header = () => {
       <img src={logo} alt="Logo" className="logo" />
       <nav className="nav">
         <a href="#home" className="navLink alignCenter">Home</a>
+        <a href="Register" className="navLink alignCenter">Registrarse</a>
         
-        <div className="loginContainer">
-          <button onClick={toggleLoginMenu} className="loginButton">
-            Login
-          </button>
-          {showLoginMenu && (
-            <div className="loginMenu">
-              <input
-                type="text"
-                placeholder="Correo electrónico"
-                value={email}
-                onChange={handleEmailChange}
-                className="inputField"
-              />
-              <input
-                type="password"
-                placeholder="Contraseña"
-                value={password}
-                onChange={handlePasswordChange}
-                className="inputField"
-              />
-              <button onClick={handleLogin} className="loginSubmitButton">Entrar</button>
-            </div>
-          )}
-        </div>
+       
       </nav>
     </header>
   );
