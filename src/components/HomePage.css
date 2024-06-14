@@ -65,6 +65,9 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Larken', serif;
+  
+  padding-bottom: 70px; /* Espacio suficiente para el footer fijo */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
 }
 
 /* Contenedor general */
