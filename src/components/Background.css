@@ -1,0 +1,13 @@
+/* src/components/Background.css */
+.background {
+    background-image: url('../assets/TriunviBackground.jpg'); /* Ajusta la ruta según corresponda */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* o 100% si quieres que tome el tamaño del contenido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Asegúrate de que esté detrás de otros elementos */
+  }
+  

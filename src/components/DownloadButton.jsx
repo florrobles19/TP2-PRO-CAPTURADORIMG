@@ -11,18 +11,11 @@ const DownloadButton = ({ content }) => {
     };
 
     return (
-        <button onClick={downloadTxtFile} style={styles.button}>
+        <button onClick={downloadTxtFile} >
             Descargar como TXT
         </button>
     );
 };
 
-const styles = {
-    button: {
-        marginTop: '20px',
-        padding: '10px 20px',
-        fontSize: '16px'
-    }
-};
 
 export default DownloadButton;

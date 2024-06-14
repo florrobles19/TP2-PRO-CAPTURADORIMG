@@ -1,0 +1,15 @@
+/* src/assets/fonts/fonts.css *//* src/assets/fonts/fonts.css */
+@font-face {
+    font-family: 'Larken';
+    src: url('/src/assets/fonts/Larken\ Regular.ttf') format('truetype'); /* Ajusta la ruta según corresponda */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Larken';
+    src: url('/src/assets/fonts/Larken\ Bold.ttf') format('truetype'); /* Ajusta la ruta según corresponda */
+    font-weight: bold;
+    font-style: normal;
+}
