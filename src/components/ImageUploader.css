@@ -2,16 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    margin: auto;
-    border-top: 50px solid transparent; /* Ajusta el borde superior */
-    min-height: calc(100vh - 70px); /* Ajusta para dejar espacio al footer */
+    width: 50%; /* Ancho del contenedor al 50% del ancho del viewport */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    min-height: calc(100vh - 70px); /* Calcula la altura mínima del contenedor para ocupar toda la altura menos 70px (para el footer) */
     padding-bottom: 30px; /* Espacio inferior adicional */
     padding-top: 30px; /* Espacio superior */
     background-color: rgba(255, 255, 255, 0.834); /* Fondo gris transparente */
-    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total del contenedor */
     position: relative; /* Asegura que el contenedor se coloque correctamente en relación con otros elementos */
-}
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+  }
 
 
 .image {
@@ -29,6 +30,7 @@
 }
 
 .text {
+    font-family: 'Larken', sans-serif; 
     margin-top: 20px;
     margin-bottom: 20px;
     white-space: pre-wrap;

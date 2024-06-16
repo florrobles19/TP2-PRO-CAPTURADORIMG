@@ -30,11 +30,8 @@ const Header = () => {
     <header className="header">
       <img src={logo} alt="Logo" className="logo" />
       <nav className="nav">
-        <a href="../HomePage.jsx" className="navLink alignCenter">Home</a>
-        
-        <a href="../Capturador.html" className="navLink alignCenter">Capturador</a>
-        
-       
+        <a href="../Index.html" className="navLink alignCenter">Home</a>
+        <a href="../Register.html" className="navLink alignCenter">Registrarse</a>                 
       </nav>
     </header>
   );
