@@ -55,7 +55,7 @@ const ImageUploader = () => {
 
     return (
         
-        <div className="container">
+        <div className="container"> 
             <input type="file" accept="image/jpeg, image/png" onChange={handleImageUpload} />
             {image && <img src={URL.createObjectURL(image)} alt="Uploaded" className="image" />}
             <button onClick={analyzeImage} className="button">Analizar imagen</button>
@@ -64,6 +64,7 @@ const ImageUploader = () => {
                     <pre className="text">{text}</pre>
                     <DownloadButton content={text} />
                 </>
+                
             )}
         </div>
     );
