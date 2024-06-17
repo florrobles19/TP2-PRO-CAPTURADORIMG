@@ -13,7 +13,7 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-const MONGO_URI = process.env.MONGO_URI;
+const MONGO_URI = "mongodb+srv://facundoledesma89:jOSwVHw0Hfs1Yohs@weatherapp.mkfsymc.mongodb.net/";
 if (!MONGO_URI) {
   throw new Error('La variable de entorno MONGO_URI no está definida');
 }
